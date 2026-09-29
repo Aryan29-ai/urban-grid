@@ -87,7 +87,6 @@ st.markdown('<div class="disclaimer">⚠️ <strong>Disclaimer:</strong> UrbanGr
 # ═══════════════════════════════════════════════════════════════════════════════
 # SIDEBAR
 # ═══════════════════════════════════════════════════════════════════════════════
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Autodesk_logo.svg/320px-Autodesk_logo.svg.png" if False else None, use_container_width=False)  # skip logo; offline
 st.sidebar.title("UrbanGrid Controls")
 
 # ── Mode ──────────────────────────────────────────────────────────────────────
