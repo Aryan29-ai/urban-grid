@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hackathon Site Guntur"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [80.43, 16.30],
+            [80.44, 16.30],
+            [80.44, 16.31],
+            [80.43, 16.31],
+            [80.43, 16.30]
+          ]
+        ]
+      }
+    }
+  ]
+}

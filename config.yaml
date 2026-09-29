@@ -1,0 +1,52 @@
+site:
+  latitude: 16.3067
+  longitude: 80.4365
+  timezone: "Asia/Kolkata"
+  crs: "EPSG:32644"
+
+zoning:
+  max_far: 4.0
+  max_building_height: 100    # metres
+  min_green_percent: 20       # %
+  min_site_area_sqm: 10000    # 1 ha minimum for any calculation
+
+solar:
+  panel_efficiency: 0.20          # fraction
+  usable_roof_fraction: 0.50      # fraction of roof usable for PV
+  avg_daily_irradiance_kwh_m2: 5.5  # Guntur annual average
+
+carbon:
+  embodied_kgco2e_per_m2: 500     # GFA-based embodied carbon proxy
+  operational_kwh_per_m2_yr: 100  # baseline operational energy proxy
+
+noise:
+  road_noise_base: 70             # dB proxy at road edge
+  green_buffer_reduction: 5       # dB per 10 m of green buffer
+
+wind:
+  prevailing_direction_deg: 225   # degrees from North (SW monsoon)
+
+population:
+  residential_area_per_person: 35 # m² GFA per person
+
+scoring:
+  sustainability: 30
+  daylight_solar: 25
+  livability: 25
+  efficiency: 20
+  metric_weights:
+    # sustainability sub-metrics
+    carbon: 50
+    green_space: 50
+    # daylight_solar sub-metrics
+    daylight: 34
+    solar: 33
+    shadow: 33
+    # livability sub-metrics
+    noise: 33
+    walking_distance: 33
+    road_accessibility: 34
+    # efficiency sub-metrics
+    far_efficiency: 34
+    ground_coverage: 33
+    population_capacity: 33
